@@ -72,9 +72,9 @@ Introduction
             with open('temp_sum.txt', 'w', encoding='utf-8') as f:
                 f.write(summaries)
 
-            summaries = self._recursive_summarize(summaries)
-            with open('temp_sum.txt', 'w', encoding='utf-8') as f:
-                f.write(summaries)
+            # summaries = self._recursive_summarize(summaries)
+            # with open('temp_sum.txt', 'w', encoding='utf-8') as f:
+            #     f.write(summaries)
 
             # 生成最终内容
             introduction = self.generate_introduction(summaries)

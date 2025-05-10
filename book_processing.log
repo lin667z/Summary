@@ -1,0 +1,10 @@
+2025-05-10 20:32:42,499 - INFO - Found 9 books in directory
+2025-05-10 20:32:42,499 - INFO - Processing book 1/9
+2025-05-10 20:32:42,502 - INFO - Processing: 5step.txt (152232 chars)
+2025-05-10 20:34:14,400 - INFO - HTTP Request: POST https://api-c1n3w031y882w2h7.aistudio-app.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-10 20:35:40,234 - INFO - Found 9 books in directory
+2025-05-10 20:35:40,234 - INFO - Processing book 1/9
+2025-05-10 20:35:40,235 - INFO - Processing: 5step.txt (152232 chars)
+2025-05-10 20:36:39,485 - INFO - HTTP Request: POST https://api-c1n3w031y882w2h7.aistudio-app.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-10 20:37:27,405 - INFO - HTTP Request: POST https://api-c1n3w031y882w2h7.aistudio-app.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-10 20:38:20,904 - INFO - HTTP Request: POST https://api-c1n3w031y882w2h7.aistudio-app.com/v1/chat/completions "HTTP/1.1 200 OK"
