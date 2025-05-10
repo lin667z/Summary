@@ -69,17 +69,31 @@ Introduction
 
             # 初始分块处理
             summaries = chunk_process(content, self.summary_template)
+            with open('temp_sum.txt', 'w', encoding='utf-8') as f:
+                f.write(summaries)
+
             summaries = self._recursive_summarize(summaries)
+            with open('temp_sum.txt', 'w', encoding='utf-8') as f:
+                f.write(summaries)
 
             # 生成最终内容
             introduction = self.generate_introduction(summaries)
             key_points = self.generate_key_points(summaries)
 
-            if introduction and key_points:
-                final_content = f"{introduction}\n\n{key_points}"
+            if introduction:
+                final_content = f"{introduction}\n\n"
                 save_content(final_content, output_path)
+
+            if key_points:
+                final_content = f"{key_points}\n\n"
+                with open(output_path, 'a', encoding='utf-8') as f:
+                    f.write(final_content)
+
+            if introduction and key_points:
                 return True
             return False
+
+
 
         except Exception as e:
             logger.error(f"Book processing failed: {str(e)}")

@@ -7,7 +7,7 @@ from typing import Optional
 def chunk_process(
         book_content: str,
         summary_template: str,
-        token_num: int = 10240,
+        token_num: int = 8192,
         chunk_size: int = 3200,
         chunk_overlap: int = 64,
         block_num: Optional[int] = None
