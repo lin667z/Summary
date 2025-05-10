@@ -8,8 +8,8 @@ def clean_text(original_text):
 
 def ds_api(query,token_num):
     client = OpenAI(
-        api_key="",
-        base_url="https://api-hcya75k62e723cf6.aistudio-app.com/v1"
+        api_key="d776ff5cfe72d5273a6db512f269a5e8fa2c1dcd",
+        base_url="https://api-c1n3w031y882w2h7.aistudio-app.com/v1"
     )
 
     completion = client.chat.completions.create(
