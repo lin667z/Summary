@@ -1,3 +1,14 @@
+# 快速使用
+1、将9本书放到./load_books/data中
+```bash
+  python format_data.py
+```
+2、开始运行AI，总结生成总结文本
+```bash
+  python main.py
+```
+
+# 示例内容：
 ## Introduction  
 The study first outlines its primary objective of investigating the impact of digital transformation on organizational efficiency, emphasizing the need for a comprehensive framework to analyze this relationship. It begins by contextualizing the rapid technological advancements in recent years and their implications for businesses. The methodology section details a mixed-methods approach, combining quantitative data from 500 enterprises with qualitative interviews from industry leaders, to ensure robustness in findings. Key results highlight a statistically significant correlation between digital adoption and productivity gains, particularly in sectors leveraging AI and automation. However, the analysis also reveals challenges such as workforce resistance and infrastructure costs, which moderate the expected benefits. The conclusion underscores the necessity of strategic planning and employee upskilling to maximize digital transformation outcomes, advocating for a balanced approach that integrates technology with human-centric policies. Overall, the research contributes to both academic discourse and practical decision-making by providing actionable insights for organizations navigating digital transitions.
 
