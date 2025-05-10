@@ -3,7 +3,7 @@
 ```bash
   python format_data.py
 ```
-2、开始运行AI，总结生成总结文本
+2、开始运行AI(在https://aistudio.baidu.com/deploy/mine获取API-key)，总结生成总结文本
 ```bash
   python main.py
 ```
