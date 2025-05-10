@@ -11,6 +11,7 @@ logger = configure_logger()
 
 class BookProcessor:
     def __init__(self):
+        # prompt可优化
         self.summary_template = """用英语总结文本块，文本块如下：
         {text}
         """
@@ -28,7 +29,7 @@ class BookProcessor:
         return content
 
     def generate_introduction(self, summaries: str) -> Optional[str]:
-        """生成引言部分"""
+        """生成引言部分 (prompt可优化)"""
         final_template = """以下是某长文本的分段总结，请将其整合为一个连贯的摘要，突出整体逻辑和结论。多个文本片段总结如下：
 {summaries}
 输出格式如下，不要分点输出，并全部使用英文输出：
@@ -42,7 +43,7 @@ Introduction
             return None
 
     def generate_key_points(self, summaries: str) -> Optional[str]:
-        """生成关键点"""
+        """生成关键点 (prompt可优化)"""
         points_template = """根据我为你提供的资料，帮我生成5到7个关键点。多个文本摘要如下:
 {summaries}
 输出格式如下，不要分点输出，并全部使用英文输出：
