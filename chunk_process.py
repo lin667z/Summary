@@ -61,7 +61,10 @@ def chunk_process(
             existing_content = f.read()
         existing_summaries = re.findall(r'<\|Im_start\|>(.*?)<\|Im_end\|>', existing_content, flags=re.DOTALL)
         start_index = len(existing_summaries)
-        print(f"检测到已有进度，从第 {start_index + 1} 个块继续处理")
+        if start_index < len(chunks):
+            print(f"检测到已有进度，从第 {start_index + 1} 个块继续处理")
+        else:
+            print(f"{start_index}/{len(chunks)}已全部处理完成！")
 
     # 处理每个文本块
     for idx in range(start_index, len(chunks)):

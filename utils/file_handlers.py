@@ -19,7 +19,7 @@ def get_book_list(book_dir: str) -> List[str]:
 def save_content(content: str, filepath: str) -> None:
     """安全保存内容到文件"""
     try:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        # os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
         logger.info(f"Successfully saved to {filepath}")
